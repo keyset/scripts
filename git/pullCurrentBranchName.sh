@@ -1,0 +1,1 @@
+git pull origin $(git branch --no-color | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
