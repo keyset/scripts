@@ -1,0 +1,9 @@
+alias.pullc=!git rev-parse --abbrev-ref HEAD | xargs -n 1 git pull origin
+alias.pushc=!git rev-parse --abbrev-ref HEAD | xargs -n 1 git push origin
+alias.pullm=!git pull origin master
+alias.gone=!git branch --merged | egrep -v "(^\*|master|main|develop)" | xargs git branch -d
+alias.sudogc=!git remote prune origin && git gc
+alias.fm=!git fetch origin master:master
+#alias.rdone=!git stash && git pull origin master && git stash pop
+pull.rebase=true
+rebase.autostash=true
